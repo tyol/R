@@ -1,10 +1,10 @@
 #************************************
-# this file will define some function
+# this file will show basic lr function
 #************************************
 
 
 #add test data
-df <- read.csv("D:\\workspace\\R\\鏈哄櫒瀛︿範绠楁硶\\test_data\\generateData.csv")
+df <- read.csv("D:\\workshop\\R\\机器学习算法\\test_data\\generateData.csv")
 
 
 lmloop<-function(df)
@@ -73,7 +73,7 @@ drawOutRelationSet<-function(nameList,lm.model.result)
 {
   out<-list()
   out<-append(out,nameList[1])
-  for (i in c(1:length(nameList))){
+  for (i in c(2:(length(nameList)-1))){
     if (lm.model.result$coefficients[i,4]<0.05){
     out<-append(out,nameList[i+1])
     }
@@ -81,5 +81,12 @@ drawOutRelationSet<-function(nameList,lm.model.result)
   return(out)
 }
 
+# 使用新数据预测
+lm.predict<-predict(lm.model,df[,-1])
+plot(df[,1],lm.predict)
+abline(0,1)
 
-
+# 拟合值
+lm.fitted<-fitted(lm.model)
+plot(df[,1],lm.fitted)
+abline(0,1)
