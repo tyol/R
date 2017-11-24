@@ -14,11 +14,11 @@ summary(tstep)
 
 # 前进法
 fstep<-step(lm.model,direction="forward")
-summary(tstep)
+summary(fstep)
 
 #后退法
 fstep<-step(lm.model,direction="backward")
-summary(tstep)
+summary(fstep)
 
 #与lmloop结果继续比较，step wise方法得到的r squared更好，但会有线性关系差的因子。
 f<-as.formula("col1 ~ col3 + col5 + col7 + col10 + col12 + col14")
