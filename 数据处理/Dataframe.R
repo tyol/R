@@ -49,3 +49,8 @@ x.stack<-stack(x) #转成map结构
 print(x.stack)
 print(x)
 x<-unstack(x.stack)
+
+#***************************************************************
+#排序
+iris[order(iris$Sepal.Length),]#降序
+iris[order(iris$Sepal.Length, iris$Sepal.Width,decreasing = TRUE), ]#升序

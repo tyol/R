@@ -1,0 +1,27 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+###############################################################################################################
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+###############################################################################################################
+
+概率分布	    随机函数	概率密度函数	分布函数	分位数函数
+二项分布	    rbinom	  dbinom	      pbinom	  qbinom
+F分布	        rf	      df	          pf	      qf
+几何分布	    rgeom	    dgeom	        pgeom	    qgeom
+超几何分布	  rhyper	  dhyper	      phyper	  qhyper
+负二项分布	  rnbinom	  dnbinom	      pnbinom	  qnbinom
+正态分布	    rnorm	    dnorm	        pnorm	    qnorm
+泊松分布	    rpois	    dpois	        ppois	    qpois
+t分布	        rt	      dt	          pt	      qt
+连续均匀分布	runif	    dunif	        punif	    qunif
+
+
+```{r}
+
+```
+
