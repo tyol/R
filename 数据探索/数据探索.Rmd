@@ -18,10 +18,12 @@ plot(iris)
 ```
 
 ```{r}
+#install.packages('car')
 library(car)
 spm(~Sepal.Length + Sepal.Width + Petal.Length + Petal.Width |
     Species, data = iris)
 ```
+R3.4版本不支持graphics包
 ```{r}
 library(graphics)
 pairs(iris[1:4], main = "Anderson's Iris Data -- 3 species",
@@ -49,7 +51,7 @@ a<-summaryBy(iris$Sepal.Length+iris$Sepal.Width~iris$Species,iris)
 print(a)
 ```
 
-特征关联性
+特征关联性（在R3.4版本上未成功）
 ```{r}
 library(caret)
 featurePlot(iris[,1:4],iris$Species,"ellipse")

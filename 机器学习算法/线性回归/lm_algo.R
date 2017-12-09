@@ -2,9 +2,10 @@
 # this file will show basic lr function
 #************************************
 
-
+#get the current path
+path <- getwd()
 #add test data
-df <- read.csv("D:\\workshop\\R\\机器学习算法\\test_data\\generateData.csv")
+df <- read.csv("D:\\workshop\\R\\????学习?惴╘\test_data\\generateData.csv")
 
 
 lmloop<-function(df)
@@ -81,12 +82,20 @@ drawOutRelationSet<-function(nameList,lm.model.result)
   return(out)
 }
 
-# 使用新数据预测
+# get the predict value from new database
 lm.predict<-predict(lm.model,df[,-1])
 plot(df[,1],lm.predict)
 abline(0,1)
 
-# 拟合值
+# get the train set predict data, and follow the degree of freedom
 lm.fitted<-fitted(lm.model)
 plot(df[,1],lm.fitted)
 abline(0,1)
+
+#keep the col3+col5+col7 with 1:1:1
+#keep the col10+col12+col14 with 1:1:1
+f<-as.formula("col1~I(col3+col5+col7)+I(col10+col12+col14)")
+lm.mode2 <- lm(f,df)
+              
+summary(lm.mode2)
+#other function can be used in the lm: log, exp, sqrt and so on.
