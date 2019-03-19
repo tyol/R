@@ -9,3 +9,8 @@ other ...
 
 All data has download in my localtion.
 thanks for <R语言与数据分析实战（徐珉久 武传海译）>
+thanks for <统计学习方法>
+
+
+此工程中所有代码全部开源。
+All code in this project is open source.
