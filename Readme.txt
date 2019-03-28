@@ -1,3 +1,6 @@
+R Language Basic Course
+Rè¯­è¨€åŸºç¡€æ•™ç¨‹
+
 I will start to learn the R, step by step.
 
 Description:
@@ -8,9 +11,9 @@ other ...
 
 
 All data has download in my localtion.
-thanks for <RÓïÑÔÓëÊı¾İ·ÖÎöÊµÕ½£¨Ğìçë¾Ã Îä´«º£Òë£©>
-thanks for <Í³¼ÆÑ§Ï°·½·¨>
+thanks for <Rè¯­è¨€ä¸æ•°æ®åˆ†æå®æˆ˜ï¼ˆå¾ç‰ä¹… æ­¦ä¼ æµ·è¯‘ï¼‰>
+thanks for <ç»Ÿè®¡å­¦ä¹ æ–¹æ³•>
 
 
-´Ë¹¤³ÌÖĞËùÓĞ´úÂëÈ«²¿¿ªÔ´¡£
+æ­¤å·¥ç¨‹ä¸­æ‰€æœ‰ä»£ç å…¨éƒ¨å¼€æºã€‚
 All code in this project is open source.
